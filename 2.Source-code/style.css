@@ -1,0 +1,61 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins, Helvetica, sans-serif;
+    background-color: #111;
+    padding-top: 200px;
+}
+
+.help-container {
+    max-width: 275px;
+    margin-inline: auto;
+}
+
+.help-toggler {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #dadadab1;
+    background-color: transparent;
+    transition: background-color 0.4s ease-out;
+}
+.help-toggler:hover {
+    background-color: #333;
+}
+.help-toggler span {
+    letter-spacing: 1px;
+    color: #dedede;
+}
+.help-toggler img {
+    width: 20px;
+}
+
+.help-content {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 16px;
+    border: 2px solid#dadadab1;
+    color: #dedede;
+    transition:  
+    visibility 0.4s ease-out,
+    opacity 0.4s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.help-content.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.help-content a {
+    color: #dedede;
+}
